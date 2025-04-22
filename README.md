@@ -19,8 +19,8 @@ Whether you're showcasing your experience, projects, or personal story, **Glow**
 
 ## 🖼 Preview
 
-![Light Mode Preview](https://images-portfolio-web.s3.ap-southeast-2.amazonaws.com/light.mp4)
-![Dark Mode Preview](https://images-portfolio-web.s3.ap-southeast-2.amazonaws.com/dark.mp4)
+![Light Mode Preview](public/light.gif)
+![Dark Mode Preview](public/dark.gif)
 
 ---
 
