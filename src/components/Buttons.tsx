@@ -1,3 +1,4 @@
+import { IconButton } from "@mui/material";
 import { styled } from "@mui/system";
 
 export const ActionButton = styled("button")({
@@ -38,5 +39,12 @@ export const DemoButton = styled(ActionButton)({
 export const WebsiteButton = styled(ActionButton)({
   "&:before": {
     content: '"🔗"',
+  },
+});
+
+export const MenuButton = styled(IconButton)({
+  color: "var(--text-primary)",
+  "&:hover": {
+    color: "var(--accent)",
   },
 });
