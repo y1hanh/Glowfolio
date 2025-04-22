@@ -1,6 +1,8 @@
-# 🌱 Your Next Portfolio Template
+# 🌱 Your Glow Portfolio Template
 
-Welcome to your next **easy-build** portfolio site – crafted with React and designed to help developers share their journey with style and simplicity.
+Welcome to **Glow**, your next **easy-build** portfolio site – crafted with React and designed to help developers share their journey with style and simplicity.
+
+Whether you're showcasing your experience, projects, or personal story, **Glow** gives you a clean, elegant timeline layout with both light and dark modes.
 
 🖥 **Live Demo:** [yihan.earth](https://yihan.earth)
 
@@ -8,7 +10,7 @@ Welcome to your next **easy-build** portfolio site – crafted with React and de
 
 ## ✨ Why You'll Love This Template
 
-- ⚡ **Super Easy to Customize** – Just update a single file!
+- ⚡ **Super Easy to Customize** – Just update a **single file**!
 - 🌓 **Light & Dark Themes** – Two clean, modern color schemes to choose from.
 - 📅 **Experience Timeline** – Showcase your personal or professional journey in a beautiful format.
 - 📱 **Fully Responsive** – Mobile-friendly and accessible.
@@ -17,8 +19,8 @@ Welcome to your next **easy-build** portfolio site – crafted with React and de
 
 ## 🖼 Preview
 
-![Light Mode Preview](public/mainPage.png)
-![Dark Mode Preview](public/mainPageDark.png)
+![Light Mode Preview](public/light.gif)
+![Dark Mode Preview](public/dark.gif)
 
 ---
 
@@ -36,13 +38,13 @@ npm install
 # 3. Run the development server
 npm run dev
 ```
+---
 
-
-## 🔧 Customize Your Portfolio
+## Customize Your Portfolio
 
 This template is designed to be incredibly easy to personalize. Here's what you need to do:
 
-### 📝 Edit Your Information
+### Edit Your Information
 
 Open the file: src/data.ts
 
@@ -54,17 +56,17 @@ And update the content:
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 Once your portfolio is customized, you can deploy it for the world to see.
 
-### ✅ Vercel
+### Vercel
 
 1. Push your code to GitHub  
 2. Go to [vercel.com](https://vercel.com)  
 3. Import the project and follow the setup steps
 
-### ✅ AWS Amplify
+### AWS Amplify
 
 1. Push your code to GitHub  
 2. Go to [AWS Amplify Console](https://aws.amazon.com/amplify/)  
@@ -72,7 +74,7 @@ Once your portfolio is customized, you can deploy it for the world to see.
 
 ---
 
-## 🤝 Contributions
+## Contributions
 
 Contributions are always welcome! ✨
 
@@ -93,7 +95,12 @@ git push origin feature/your-feature-name
 # 5. Open a Pull Request 🚀
 ```
 
-## 📄 License
+## License
 This project is licensed under the MIT License.
+
+If you enjoyed using this template, feel free to star 🌟 the repo and share it with your friends!
+
+## Created by
+Made with ❤️ by [Yihan Huang](https://github.com/y1hanh)
 
 If you enjoyed using this template, feel free to star 🌟 the repo and share it with your friends!
