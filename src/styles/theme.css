@@ -1,0 +1,106 @@
+@import "tailwindcss";
+:root {
+  /* Light theme variables */
+  --background: #FAF9F6 ;
+  --background-secondary: #f5f5f5;
+  --text-primary: #2A2A2A;
+  --text-secondary:#4A4A4A;
+  --accent: #F2C6DE;
+  --border: #eaeaea;
+  --card-title-bg: 	#afa9a98a;
+  --card-content-bg: #f5f5f5;
+  --nav-bg:#F9F6F1;
+  --highlighting:#D46A6A;
+}
+
+/* Dark theme variables */
+:root.dark {
+  --background: #1A1A1A;
+  --background-secondary: #1a1a1a;
+  --text-primary:  #F2F2F2;
+  --text-secondary: #CCCCCC;
+  --accent:  #F2C6DE;
+  --border: #2a2a2a;
+  --card-title-bg: 	#afa9a98a;
+  --card-content-bg: #2B2B2B;
+  --nav-bg: #262626	;
+  --highlighting:#F28C8C;
+}
+
+/* Base styles */
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", serif; /* !important */
+
+}
+
+.page-content {
+  background-color: var(--background);
+  background-image: radial-gradient(#444 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: rain 20s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.welcome-page {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: radial-gradient(#444 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: rain 20s linear infinite;
+}
+
+#root {
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+.App {
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+/* Navigation styles */
+nav {
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Card and container styles */
+.card, 
+.container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+}
+
+/* Transition for theme switching */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, 
+              color 0.3s ease, 
+              border-color 0.3s ease;
+} 
+
+a {
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--highlighting);
+}
