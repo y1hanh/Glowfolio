@@ -2,7 +2,7 @@
 
 Welcome to your next **easy-build** portfolio site – crafted with React and designed to help developers share their journey with style and simplicity.
 
-🖥 **Live Demo:** [https://yihan.earth/](https://yihan.earth/)
+🖥 **Live Demo:** [yihan.earth](https://yihan.earth)
 
 ---
 
@@ -28,7 +28,7 @@ Follow these simple steps to launch your portfolio locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/y1hanh/react-portfolio-template.git
 
 # 2. Install dependencies
 npm install
@@ -48,11 +48,9 @@ Open the file: src/data.ts
 
 And update the content:
 
-- Profile  
-- Intro and bio  
+- Profile
 - Experience timeline  
-- Projects  
-- Social links and more
+- Projects
 
 ---
 
@@ -65,12 +63,6 @@ Once your portfolio is customized, you can deploy it for the world to see.
 1. Push your code to GitHub  
 2. Go to [vercel.com](https://vercel.com)  
 3. Import the project and follow the setup steps
-
-### ✅ Netlify
-
-1. Push your code to GitHub  
-2. Go to [netlify.com](https://www.netlify.com)  
-3. Link your repository and deploy
 
 ### ✅ AWS Amplify
 
@@ -99,7 +91,7 @@ git commit -m "Add feature"
 git push origin feature/your-feature-name
 
 # 5. Open a Pull Request 🚀
-
+```
 
 ## 📄 License
 This project is licensed under the MIT License.
