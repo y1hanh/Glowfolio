@@ -8,6 +8,7 @@ export const ActionButton = styled("button")({
   borderRadius: "20px",
   fontSize: "0.9rem",
   fontWeight: 500,
+  justifyContent: "center",
   cursor: "pointer",
   display: "flex",
   alignItems: "center",

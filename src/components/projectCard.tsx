@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Typography, useTheme, useMediaQuery, Modal } from "@mui/material";
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectData } from "../dataType";
-import { ActionButton, WebsiteButton } from "./Buttons";
+import { ActionButton, WebsiteButton } from "./buttons";
 
 export function ProjectCard({
   name,

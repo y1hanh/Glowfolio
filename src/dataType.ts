@@ -14,6 +14,7 @@ export type ProfileData = {
   name: string;
   alias: string;
   picture: string;
+  welcomeMessage: string;
   role: string;
   location: string;
   introduction: string;

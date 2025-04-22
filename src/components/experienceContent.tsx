@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 import { styled } from "@mui/system";
-import { DemoButton, WebsiteButton } from "./Buttons";
+import { DemoButton, WebsiteButton } from "./buttons";
 
 const ContentList = styled("ul")({
   listStyle: "none",

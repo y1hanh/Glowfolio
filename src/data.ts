@@ -1,31 +1,20 @@
-import { Experience } from "./pages/experience";
-import { Profile } from "./pages/profile";
-import { Project } from "./pages/project";
+import { Experience } from "./pages/ExperiencePage";
+import { Profile } from "./pages/ProfilePage";
+import { Project } from "./pages/ProjectPage";
 import { MenuItem, ExperienceData, ProjectData, ProfileData } from "./dataType";
 
 // Update your "Profile" page data here
 export const profile: ProfileData = {
-  name: "Yihan Huang (Evelyn)",
-  alias: "Yihan",
-  picture: "assets/yihan.jpeg",
+  name: "Your name",
+  alias: "Your alias",
+  welcomeMessage: 'console.log("👋 Welcome to Yihan\'s Dev Space");',
+  picture: "assets/XXX.jpeg",
   role: "Full Stack Developer",
   location: "Melbourne, Australia",
-  introduction:
-    "Hi, I'm Yihan — a full-stack developer who loves building things that are both powerful and user-friendly. Right now, I’m working on my final year project — a platform that helps detect toxic language on social media. I believe technology should be a force for safety, connection, and empowerment. I’m currently looking for a full-stack role where I can keep growing, build user-liked products, and make a positive impact through tech.",
-  github: "https://github.com/y1hanh",
-  linkedin: "www.linkedin.com/in/yihan-huang-10963a238",
-  email: "huangehan@gmail.com",
-  pet: "Stella",
-  petDescription: "Meet Stella, 3 years old girl cat!",
-  petImage: [
-    "assets/stella.jpeg",
-    "assets/stella2.jpeg",
-    "assets/stella3.jpeg",
-  ],
-  extracurricular: "Ex-Communication Officer @ Monash Squash Club",
-  extracurricularImage: "assets/squash_club.jpeg",
-  extracurricularDescription:
-    "I'm a casual squash player and I love to play it! I was also a communication officer for Monash Squash Club(2024-2025), making artfacts for the club!",
+  introduction: "Hi I am XX.",
+  github: "https://github.com/xxxx",
+  linkedin: "www.linkedin.com/in/xxxx",
+  email: "xxx@gmail.com",
 };
 
 // Update your menu items here
@@ -59,24 +48,31 @@ ${profile.alias}.sayHi();
 // → Click to view resume 
 `;
 
+// Update your 'experience' page head line here
+export const experiencePageHeadline = {
+  title: "Tracing my path in tech",
+  subtitle:
+    "Each step here tells a part of my story—growing, building, and finding my place in tech.",
+};
+
 // Update your 'experience' page data here
 export const experiences: ExperienceData[] = [
   {
     year: "2022",
     title: "Frontend Developer Intern",
-    company: "Bilibili",
+    company: "XXX",
     content: [
       {
         website: "https://www.bilibili.com/",
         description: [
-          "Crafted and customized user interface components using ",
+          "XXX ",
           { text: "JavaScript, TypeScript, Webpack, and Vue3", bold: true },
-          ", enhancing the platform's user experience.",
+          "XXX",
         ],
       },
       {
         description: [
-          "Collaborated with cross-functional teams to diagnose and resolve complex issues, ensuring ",
+          "XXX ",
           { text: "robust and reliable platform performance", bold: true },
           ".",
         ],
@@ -86,53 +82,32 @@ export const experiences: ExperienceData[] = [
   },
   {
     year: "2023",
-    title: "Master of Information Technology",
-    company: "Monash University",
+    title: "Bachelor of Computer Science",
+    company: "XXX University",
     content: [
       {
-        description: [{ text: "GPA: 3.6/4.0, WAM: 80", bold: true }],
+        description: [{ text: "GPA: XXX, WAM: XX", bold: true }],
       },
     ],
     position: "left",
   },
   {
     year: "2024",
-    title: "Summer Reseach Intern",
-    company: "Shortest Path",
+    title: "Software Engineer",
+    company: "XXXX",
     content: [
       {
         description: [
-          "Improved an open-source platform for",
-          { text: " visualizing algorithms  ", bold: true },
+          "XX",
+          { text: " algorithms  ", bold: true },
           "using",
-          { text: "TypeScript, React and Bun", bold: true },
-          ", enhancing users' ability to debug and explore their algorithms.",
+          { text: " TypeScript, React and Bun", bold: true },
+          ", XXX",
         ],
       },
       {
-        project:
-          "https://images-portfolio-web.s3.ap-southeast-2.amazonaws.com/highlighting_view.mp4",
-        description: [
-          "Designed new features for ",
-          { text: "exploring search traces", bold: true },
-          ", helping users understand specific sequences of decisions.",
-        ],
-      },
-      {
-        description: [
-          "Implemented a new component for ",
-          { text: "variable tracking", bold: true },
-          " in the visualization, showing the distribution and changes of values over time.",
-        ],
-      },
-      {
-        project:
-          "https://images-portfolio-web.s3.ap-southeast-2.amazonaws.com/debugging_short.mp4",
-        description: [
-          "Integrated ",
-          { text: "invariant validation with breakpoints", bold: true },
-          " to automatically catch bugs, effectively capturing complex issues that users want to monitor.",
-        ],
+        project: "https://example.mp4",
+        description: ["some  ", { text: "demo videos", bold: true }, ""],
       },
     ],
     position: "right",
@@ -143,34 +118,8 @@ export const experiences: ExperienceData[] = [
     company: "Industry Experience Project",
     content: [
       {
-        website: "https://shieldspace.games/",
-        description: [
-          "Designed and implemented the architecture for a full-stack web application using ",
-          { text: "NLP models", bold: true },
-          " to detect bullying and toxic language in user input. Used ",
-          { text: "NestJS, AWS RDS, FastAPI, Python", bold: true },
-          " for backend services and AI model layer. Deployed the system on ",
-          { text: "DigitalOcean using PM2 and Nginx", bold: true },
-          " for process management and routing.",
-        ],
-      },
-      {
-        description: [
-          "Established clear communication logic between the backend application layer and the AI model layer, promoting ",
-          { text: "loose coupling and modular design", bold: true },
-          " to enhance scalability and maintainability. Followed ",
-          { text: "Agile methodologies", bold: true },
-          " throughout the product development process.",
-        ],
-      },
-      {
-        description: [
-          "Established clear communication logic between the backend application layer and the AI model layer, promoting ",
-          { text: "loose coupling and modular design", bold: true },
-          " to enhance scalability and maintainability. Followed ",
-          { text: "Agile methodologies", bold: true },
-          " throughout the product development process.",
-        ],
+        website: "https://example.com/",
+        description: ["XXX ", { text: " XXX", bold: true }],
       },
     ],
     position: "left",
@@ -180,109 +129,71 @@ export const experiences: ExperienceData[] = [
 // Update your 'project' page data here
 export const projects: ProjectData[] = [
   {
-    name: "Bilibili - A video streaming platform",
+    name: "XXX - XXX",
     description: [
       [
         {
-          text: "Bilibili is a video streaming platform, and I worked there as a frontend developer for one year.",
+          text: "XXX",
           bold: false,
         },
       ],
       [
         {
-          text: "I developed  ",
-          bold: false,
-        },
-        {
-          text: "internal UI library",
+          text: " XXX",
           bold: true,
-        },
-        {
-          text: " and customized components for Bilibili's internal platform.",
-          bold: false,
         },
       ],
     ],
-    thumbnail: "assets/bilibili.png",
-    technologies: ["Vue3", "JavaScript", "WebPack", "Kanban"],
-    demoUrl: "https://bilibili.com",
+    thumbnail: "assets/example.png",
+    technologies: ["XXX", "XX", "XXX", "XXX"],
+    demoUrl: "https://example.com",
   },
   {
-    name: "Posthoc - A tool for algorithm visualization",
+    name: "XXXX",
     description: [
       [
         {
-          text: "Posthoc is an open-source platform for visualizing sequential decision-making algorithms, like MAPF, constraint problems, planning problems, etc.",
+          text: "xxxx.",
           bold: false,
         },
       ],
       [
         {
-          text: "Designed new features for exploring",
-          bold: false,
-        },
-        {
-          text: " search traces",
+          text: "XXX",
           bold: true,
-        },
-        {
-          text: ", and helping users understand specific sequences of decisions.",
-          bold: false,
-        },
-      ],
-      [
-        {
-          text: "Implemented variable tracking in the visualization, showing the distribution and changes of values over time.",
-          bold: false,
         },
       ],
     ],
-    thumbnail: "assets/axies.gif",
-    technologies: ["React", "TypeScript", "Canvas", "Sigma"],
-    demoUrl: "https://posthoc.pathfinding.ai/",
+    thumbnail: "assets/xxx.gif",
+    technologies: ["XXX", "XX", "XX", "XX"],
+    demoUrl: "https://example.com/",
   },
   {
-    name: "Shield Space - Emotional Assessment Tool for bullying detection",
+    name: "XXXX",
     description: [
       [
         {
-          text: "Shield Space is my final year project, a platform that helps detect toxic language on social media. ",
-          bold: false,
-        },
-      ],
-      [
-        {
-          text: "I designed ",
+          text: "XXX",
           bold: false,
         },
         {
-          text: "system architecture ",
+          text: "XXX",
           bold: true,
         },
         {
-          text: "for this project, and used NestJS, AWS RDS, FastAPI, Python for backend services and AI models layer. Frontend was built with React, TypeScript and MUI.",
+          text: "xxxx",
           bold: false,
         },
       ],
       [
         {
-          text: "Deployed the system on DigitalOcean using Docker and Nginx for process management and routing.",
+          text: "xxxxx",
           bold: false,
         },
       ],
     ],
-    thumbnail: "assets/shieldspace.gif",
-    technologies: [
-      "React",
-      "TypeScript",
-      "NestJS",
-      "NodeJS",
-      "Agile",
-      "FastAPI",
-      "Python",
-      "Docker",
-      "AWS RDS",
-    ],
-    demoUrl: "https://shieldspace.games/",
+    thumbnail: "assets/example.gif",
+    technologies: ["XX", "XXXXXX", "XXX"],
+    demoUrl: "https://example.com/",
   },
 ];
