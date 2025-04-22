@@ -102,9 +102,6 @@ git push origin feature/your-feature-name
 ## License
 This project is licensed under the MIT License.
 
-If you enjoyed using this template, feel free to star 🌟 the repo and share it with your friends!
-
-## Created by
 Made with ❤️ by [Yihan](https://github.com/y1hanh)
 
 If you enjoyed using this template, feel free to star 🌟 the repo and share it with your friends!
