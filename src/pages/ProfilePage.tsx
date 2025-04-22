@@ -45,6 +45,7 @@ export function Profile() {
           <Box
             component="img"
             src={profile.picture}
+            alt="Yihan"
             sx={{
               width: isMobile ? 200 : 300,
               height: isMobile ? 200 : 300,
@@ -151,8 +152,7 @@ export function Profile() {
             display: "flex",
             flexDirection: isMobile ? "column" : "row",
             gap: isMobile ? 1 : 2,
-            justifyContent: "center",
-
+            justifyContent: isMobile ? "center" : "center",
             width: "100%",
             mt: isMobile ? 2 : 3,
           }}
@@ -174,84 +174,83 @@ export function Profile() {
             mt: isMobile ? 3 : 4,
           }}
         >
-          {profile.extracurricularImage && (
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: isMobile ? 2 : 3,
-                flex: 1,
-              }}
-            >
-              <Box sx={{ flex: 1 }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: isMobile ? 2 : 3,
+              flex: 1,
+            }}
+          >
+            <Box sx={{ flex: 1 }}>
+              <Typography
+                variant={isMobile ? "h5" : "h4"}
+                color="var(--text-primary)"
+                component="h2"
+                gutterBottom
+                sx={{
+                  textAlign: isMobile ? "center" : "left",
+                  fontSize: isMobile ? "1.5rem" : "2.125rem",
+                  mb: isMobile ? 1.5 : 2,
+                }}
+              >
+                Beside Coding...
+              </Typography>
+
+              <ImageList
+                sx={{
+                  width: "100%",
+                  borderRadius: 1,
+                  overflow: "hidden",
+                  margin: "0 auto",
+                  height: isMobile ? 200 : 300,
+                }}
+                cols={isMobile ? 1 : 2}
+                rowHeight={isMobile ? 200 : 300}
+              >
+                <ImageListItem>
+                  <img
+                    src={profile.extracurricularImage}
+                    alt="Squash Club"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    loading="lazy"
+                  />
+                </ImageListItem>
+              </ImageList>
+
+              <Box
+                sx={{
+                  textAlign: isMobile ? "center" : "left",
+                  mt: isMobile ? 1.5 : 2,
+                }}
+              >
                 <Typography
-                  variant={isMobile ? "h5" : "h4"}
+                  variant={isMobile ? "h6" : "h5"}
                   color="var(--text-primary)"
-                  component="h2"
                   gutterBottom
                   sx={{
-                    textAlign: isMobile ? "center" : "left",
-                    fontSize: isMobile ? "1.5rem" : "2.125rem",
-                    mb: isMobile ? 1.5 : 2,
+                    fontSize: isMobile ? "1.25rem" : "1.5rem",
+                    mb: isMobile ? 0.5 : 1,
                   }}
                 >
-                  Beside Coding...
+                  {profile.extracurricular}
                 </Typography>
-
-                <ImageList
+                <Typography
+                  variant={isMobile ? "body1" : "h6"}
+                  color="var(--text-secondary)"
                   sx={{
-                    width: "100%",
-                    borderRadius: 1,
-                    overflow: "hidden",
-                    margin: "0 auto",
-                    height: isMobile ? 200 : 300,
-                  }}
-                  cols={isMobile ? 1 : 2}
-                  rowHeight={isMobile ? 200 : 300}
-                >
-                  <ImageListItem>
-                    <img
-                      src={profile.extracurricularImage}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                      loading="lazy"
-                    />
-                  </ImageListItem>
-                </ImageList>
-
-                <Box
-                  sx={{
-                    textAlign: isMobile ? "center" : "left",
-                    mt: isMobile ? 1.5 : 2,
+                    fontSize: isMobile ? "0.875rem" : "1rem",
                   }}
                 >
-                  <Typography
-                    variant={isMobile ? "h6" : "h5"}
-                    color="var(--text-primary)"
-                    gutterBottom
-                    sx={{
-                      fontSize: isMobile ? "1.25rem" : "1.5rem",
-                      mb: isMobile ? 0.5 : 1,
-                    }}
-                  >
-                    {profile.extracurricular}
-                  </Typography>
-                  <Typography
-                    variant={isMobile ? "body1" : "h6"}
-                    color="var(--text-secondary)"
-                    sx={{
-                      fontSize: isMobile ? "0.875rem" : "1rem",
-                    }}
-                  >
-                    {profile.extracurricularDescription}
-                  </Typography>
-                </Box>
+                  {profile.extracurricularDescription}
+                </Typography>
               </Box>
             </Box>
-          )}
+          </Box>
           {profile.pet && (
             <Box sx={{ flex: 1 }}>
               <Typography
@@ -265,20 +264,20 @@ export function Profile() {
                   mb: isMobile ? 1.5 : 2,
                 }}
               >
-                {profile.petDescription}
+                My fluffy friend...
               </Typography>
+
               {profile.petImage && profile.petImage.length > 0 && (
                 <ImageList
                   sx={{
                     width: "100%",
-                    height: isMobile ? 400 : 600,
                     borderRadius: 1,
                     overflow: "hidden",
                     margin: "0 auto",
+                    height: isMobile ? 200 : 300,
                   }}
-                  cols={isMobile ? 1 : 3}
+                  cols={isMobile ? 1 : 2}
                   rowHeight={isMobile ? 200 : 300}
-                  gap={isMobile ? 8 : 16}
                 >
                   {profile.petImage.map((image, index) => (
                     <ImageListItem key={index}>
@@ -288,7 +287,7 @@ export function Profile() {
                         style={{
                           width: "100%",
                           height: "100%",
-                          objectFit: "cover",
+                          objectFit: "contain",
                         }}
                         loading="lazy"
                       />
@@ -296,6 +295,22 @@ export function Profile() {
                   ))}
                 </ImageList>
               )}
+              <Box
+                sx={{
+                  textAlign: isMobile ? "center" : "left",
+                  mt: isMobile ? 1.5 : 2,
+                }}
+              >
+                <Typography
+                  variant={isMobile ? "body1" : "h6"}
+                  color="var(--text-secondary)"
+                  sx={{
+                    fontSize: isMobile ? "0.875rem" : "1rem",
+                  }}
+                >
+                  {profile.petDescription}
+                </Typography>
+              </Box>
             </Box>
           )}
         </Box>

@@ -4,7 +4,7 @@ import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import { Year } from "../components/year";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ExperienceCard } from "../components/experienceCard";
-import { experiencePageHeadline, experiences } from "../data";
+import { experiencePageHeadline, experiences, profile } from "../data";
 import { ExperienceContent } from "../components/experienceContent";
 import { TimelineContainer } from "../components/timelineContainer";
 import { TimelineLine } from "../components/timelineLine";
