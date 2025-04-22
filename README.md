@@ -19,7 +19,11 @@ Whether you're showcasing your experience, projects, or personal story, **Glow**
 
 ## 🖼 Preview
 
+### Light Mode Preview
+
 ![Light Mode Preview](public/light.gif)
+
+### Dark Mode Preview
 ![Dark Mode Preview](public/dark.gif)
 
 ---
@@ -101,6 +105,6 @@ This project is licensed under the MIT License.
 If you enjoyed using this template, feel free to star 🌟 the repo and share it with your friends!
 
 ## Created by
-Made with ❤️ by [Yihan Huang](https://github.com/y1hanh)
+Made with ❤️ by [Yihan](https://github.com/y1hanh)
 
 If you enjoyed using this template, feel free to star 🌟 the repo and share it with your friends!
